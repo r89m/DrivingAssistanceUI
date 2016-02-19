@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">DrivingAssistanceUI</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_feedback">User Feedback</string>
+    <string name="title_activity_user_feedback_high_contrast">User Feedback: High Contrast</string>
+    <string name="title_activity_user_feedback_high_symbols">User Feedback: Symbols</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Profile Settings -->
+    <string name="pref_header_profiles">Profiles</string>
+    <string name="pref_subheader_profiles">Profiles Subheader</string>
+
+    <string name="pref_title_name">Name</string>
+    <string name="pref_title_sensitivity">Sensitivity</string>
+    <string name="pref_title_feedback_audible_enabled">Enabled</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_connection_mode">Connection Mode</string>
+    <string-array name="pref_general_connection_mode">
+        <item>Debugging (Laptop as Server)</item>
+        <item>Production (RPi as Server)</item>
+    </string-array>
+    <string-array name="pref_general_connection_mode_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="option_choose_profile">Choose Profile...</string>
+    <string name="pref_title_profile_name">Profile Name</string>
+
+
+    <string name="profile_change_reason_timer_start">because of the time</string>
+    <string name="profile_change_reason_timer_end">because of the time</string>
+    <string name="profile_change_reason_location_enter">because you arrived at a known location</string>
+    <string name="profile_change_reason_location_leave">because you left a known location</string>
+    <string name="profile_change_reason_default">because this is the default profile</string>
+    <string name="option_edit_current_profile">Edit Current Profile...</string>
+    <string name="pref_title_profile_audible_enabled">Enabled</string>
+    <string name="pref_title_profile_haptic_enabled">Enabled</string>
+    <string name="pref_title_profile_visual_enabled">Enabled</string>
+    <string name="pref_title_profile_timer_enabled">Enabled</string>
+    <string name="pref_title_location_enabled">Enabled</string>
+
+
+    <string name="set">Set</string>
+    <string name="cancel">Cancel</string>
+    <string name="pref_title_profile_timer_end">Time Trigger End Time</string>
+    <string name="pref_title_profile_timer_start">Time Trigger Start Time</string>
+    <string name="pref_title_profile_location_radius">Location Trigger Radius (m)</string>
+    <string name="pref_title_location_position">Location Trigger Position</string>
+    <string name="pref_title_profile_visual_distance">Show obstacles closer than... (cm)</string>
+    <string name="pref_title_profile_audible_volume">Audible Feedback Volume</string>
+    <string name="pref_title_profile_haptic_intensity">Haptic Feedback Intensity</string>
+    <string name="title_activity_location_preference">Activation Location</string>
+
+</resources>

@@ -1,0 +1,112 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/lib/uk.ac.kent.rm538.drivingassistanceui">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <PreferenceCategory android:title="General">
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@null"
+            android:inputType="textCapWords"
+            android:key="profile_name"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_profile_name" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Visual Feedback">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="profile_visual_enabled"
+            android:title="@string/pref_title_profile_visual_enabled" />
+
+        <uk.ac.kent.rm538.drivingassistanceui.UserSettings.Preferences.SeekBarPreference
+            android:defaultValue="120"
+            android:key="profile_visual_distance"
+            android:title="@string/pref_title_profile_visual_distance"
+            android:max="300"
+            custom:stepsize="10" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Audible Feedback">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="profile_audible_enabled"
+            android:title="@string/pref_title_profile_audible_enabled" />
+
+        <uk.ac.kent.rm538.drivingassistanceui.UserSettings.Preferences.SeekBarPreference
+            android:defaultValue="50"
+            android:key="profile_audible_volume"
+            android:title="@string/pref_title_profile_audible_volume"
+            android:max="100"
+            custom:stepsize="10" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Haptic Feedback">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="profile_haptic_enabled"
+            android:title="@string/pref_title_profile_haptic_enabled" />
+
+        <uk.ac.kent.rm538.drivingassistanceui.UserSettings.Preferences.SeekBarPreference
+            android:defaultValue="5"
+            android:key="profile_haptic_intensity"
+            android:title="@string/pref_title_profile_haptic_intensity"
+            android:max="10" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Time Trigger">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="profile_timer_enabled"
+            android:title="@string/pref_title_profile_timer_enabled" />
+
+        <Preference
+            android:key="profile_timer_start"
+            android:title="@string/pref_title_profile_timer_start"
+            android:numeric="integer"/>
+
+        <Preference
+            android:key="profile_timer_end"
+            android:title="@string/pref_title_profile_timer_end"
+            android:numeric="integer"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Location Trigger">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="profile_location_enabled"
+            android:title="@string/pref_title_location_enabled" />
+
+        <Preference
+            android:key="profile_location_position"
+            android:title="@string/pref_title_location_position" />
+
+        <EditTextPreference
+            android:key="profile_location_radius"
+            android:title="@string/pref_title_profile_location_radius"
+            android:numeric="integer" />
+
+    </PreferenceCategory>
+
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <!--<ListPreference-->
+        <!--android:defaultValue="-1a"-->
+        <!--android:entries="@array/pref_general_connection_mode"-->
+        <!--android:entryValues="@array/pref_general_connection_mode_values"-->
+        <!--android:key="example_list"-->
+        <!--android:negativeButtonText="@null"-->
+        <!--android:positiveButtonText="@null"-->
+        <!--android:title="@string/pref_title_connection_mode" />-->
+
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colourObstacleSevere">#FF0000</color>
+    <color name="colourObstacleModerate">#fb8c00</color>
+    <color name="colourObstacleMild">#ffd500</color>
+    <color name="colourObstacleLow">#8cff00</color>
+    <color name="colourObstacleNone">#8cff00</color>
+</resources>
